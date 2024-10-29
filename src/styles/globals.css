@@ -1,0 +1,35 @@
+/* src/styles/globals.css */
+/* Import Tailwind Base Styles */
+@tailwind base;
+
+/* Import Tailwind Components */
+@tailwind components;
+
+/* Import Tailwind Utilities */
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Custom Global Styles */
+/* */
+
+/* Best Practices and Resets */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Focus Styles for Accessibility */
+* :focus {
+  @apply outline-none ring-2 ring-blue-500;
+}
