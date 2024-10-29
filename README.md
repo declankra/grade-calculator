@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Grade Calculator Tool
 
-## Getting Started
+A modern, minimalist, and user-friendly grade calculator web application for college and high school students. Easily calculate your required final exam score, average grades, and GPA with a clean and intuitive interface.
 
-First, run the development server:
+[Visit the Website](https://your-website-url.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Roadmap](#roadmap)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend Framework**: [Next.js](https://nextjs.org/) with TypeScript
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Component Library**: [Shadcn UI](https://ui.shadcn.com/) (if applicable)
+- **Deployment**: [Vercel](https://vercel.com/)
+- **Version Control**: [GitHub](https://github.com/)
 
-## Learn More
+## Project Structure
+    project-root/
+    ├── package.json
+    ├── tsconfig.json
+    ├── next.config.js
+    ├── tailwind.config.js
+    ├── postcss.config.js
+    ├── .gitignore
+    ├── .env.local
+    ├── README.md
+    ├── public/
+    │   └── favicon.ico
+    └── src/
+        ├── pages/
+        │   ├── _app.tsx
+        │   ├── index.tsx
+        │   └── _document.tsx
+        │  
+        ├── components/
+        │   └── Calculator.tsx
+        ├── styles/
+        │   └── globals.css
+ 
 
-To learn more about Next.js, take a look at the following resources:
+### File Descriptions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **package.json**: Contains project metadata and dependencies.
+- **tsconfig.json**: TypeScript configuration file.
+- **next.config.js**: Next.js configuration file.
+- **tailwind.config.js**: Tailwind CSS configuration file, including custom themes.
+- **postcss.config.js**: PostCSS configuration file.
+- **public/**: Directory for static assets like favicon.
+- **src/**: Main application source code.
+  - **pages/**: Contains Next.js page components.
+    - **\_app.tsx**: Custom App component for initializing pages with global styles.
+    - **\_document.tsx**: Custom Document component for augmenting the application's `<html>` and `<body>` tags.
+    - **index.tsx**: Main entry point of the application.
+  - **components/**: Contains reusable React components.
+    - **Calculator.tsx**: Main calculator component handling the calculation logic.
+  - **styles/**: Contains global and component-specific styles.
+    - **globals.css**: Global CSS styles including Tailwind directives and custom styles.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Roadmap
 
-## Deploy on Vercel
+**Features - add the other ‘core’ components (calculators) 1 by 1**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Single Class Grade Calculator:** Calculating average grades from multiple inputs (assignments) i.e. average input calculations.
+- **Multiple Class Grade Calculator** == **Semester GPA Calculation:** Calculating GPA across multiple individual classes within a single semester.
+- **Cumulative GPA Calculator**: Allowing users to add multiple semesters (and optional individual class grades) to calculate their overall GPA. Calculating overall GPA across multiple semesters.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Design & Completeness - add overall enhancements [early differentiators]**
+
+- **design goes “wow, this is slick”:** create that unexpected delight for the users through design. it should be simple and scale across all pages. possibly magicUI or some Tailwindcss backgrounds/styling.
+- **Unit Selection**: Enabling users to select units for calculation inputs, such as points or letter grades.
+- **Menubar**: Navigate between calculators.
+- **Feedback form:** feedback is important. gather direction.
