@@ -1,5 +1,6 @@
 // src/pages/_document.tsx
 import { Html, Head, Main, NextScript } from 'next/document';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Document() {
     
@@ -40,6 +41,7 @@ export default function Document() {
         <body className="font-sans">
           <Main />
           <NextScript />
+          <Analytics />
         </body>
       </Html>
     );
