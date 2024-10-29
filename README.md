@@ -68,7 +68,7 @@ A modern, minimalist, and user-friendly grade calculator web application for col
 - **Multiple Class Grade Calculator** == **Semester GPA Calculation:** Calculating GPA across multiple individual classes within a single semester.
 - **Cumulative GPA Calculator**: Allowing users to add multiple semesters (and optional individual class grades) to calculate their overall GPA. Calculating overall GPA across multiple semesters.
 
-**Design & Completeness - add overall enhancements [early differentiators]**
+**Design & Completeness - add overall enhancements [easy differentiators]**
 
 - **design goes “wow, this is slick”:** create that unexpected delight for the users through design. it should be simple and scale across all pages. possibly magicUI or some Tailwindcss backgrounds/styling.
 - **Unit Selection**: Enabling users to select units for calculation inputs, such as points or letter grades.
